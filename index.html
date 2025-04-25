@@ -2,36 +2,69 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>日本の土壌分布一覧</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>都道府県別 土壌情報</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 20px;
+      color: #2c3e50;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0;
+      width: 90%;
+      max-width: 400px;
+    }
+    li {
+      background: #ffffff;
+      margin: 0.5rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    li:hover {
+      transform: translateY(-2px);
+    }
+    a {
+      display: block;
+      padding: 1rem;
+      text-decoration: none;
+      color: #3498db;
+      font-weight: bold;
+      text-align: center;
+    }
+    a:hover {
+      background-color: #ecf0f1;
+    }
+  </style>
 </head>
 <body>
-  <h1>都道府県ごとの土壌分布</h1>
-  <table border="1">
-    <thead>
-      <tr>
-        <th>都道府県</th>
-        <th>主な土壌</th>
-        <th>特徴</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a href="hokkaido.html">北海道</a></td>
-        <td>黒ボク土</td>
-        <td>火山灰由来で肥沃。ジャガイモや小麦に適する。</td>
-      </tr>
-      <tr>
-        <td><a href="niigata.html">新潟県</a></td>
-        <td>グライ土</td>
-        <td>水田が多く稲作に適する。</td>
-      </tr>
-      <tr>
-        <td><a href="miyazaki.html">宮崎県</a></td>
-        <td>赤黄色土</td>
-        <td>南国型の赤土で畑作向き。施肥が必要。</td>
-      </tr>
-      <!-- 必要に応じて続けてください -->
-    </tbody>
-  </table>
+  <h1>都道府県別 土壌情報</h1>
+  <ul>
+    <li><a href="hokkaido.html">北海道</a></li>
+    <li><a href="aomori.html">青森県</a></li>
+    <li><a href="iwate.html">岩手県</a></li>
+    <li><a href="miyagi.html">宮城県</a></li>
+    <li><a href="akita.html">秋田県</a></li>
+    <li><a href="yamagata.html">山形県</a></li>
+    <li><a href="fukushima.html">福島県</a></li>
+    <li><a href="ibaraki.html">茨城県</a></li>
+    <li><a href="tochigi.html">栃木県</a></li>
+    <li><a href="gunma.html">群馬県</a></li>
+  </ul>
 </body>
 </html>
